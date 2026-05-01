@@ -4,6 +4,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+const img1 = "/images/work1.jpg";
+const img2 = "/images/work2.jpg";
+const img3 = "/images/work3.png";
+const img4 = "/images/work4.jpg";
+const img5 = "/images/work5.png";
+const img6 = "/images/work6.png";
+
+
 gsap.registerPlugin(useGSAP);
 
 const Work = () => {
@@ -54,12 +62,12 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {[
-            { title: "Global Reach", category: "Clientele", tools: "Instagram, Facebook, X", desc: "Successfully supported 1000+ clients globally", image: "/images/work1.jpg" },
-            { title: "High Success Rate", category: "Recovery", tools: "Account Management", desc: "Maintained a high success rate in account recovery and issue resolution", image: "/images/work2.jpg" },
-            { title: "Access Restoration", category: "Support", tools: "Security", desc: "Handled cases including account access issues and recovery", image: "/images/work3.png" },
-            { title: "Visibility Optimization", category: "Growth", tools: "Strategy", desc: "Delivered visibility and reach optimization", image: "/images/work4.jpg" },
-            { title: "Restriction Handling", category: "Compliance", tools: "Appeals", desc: "Specialized in restriction and limitation removal", image: "/images/work5.png" },
-            { title: "Diverse Clientele", category: "Reach", tools: "Brand Positioning", desc: "Consistent results across creators, businesses, and public profiles", image: "/images/work6.png" }
+            { title: "Global Reach", category: "Clientele", tools: "Instagram, Facebook, X", desc: "Successfully supported 1000+ clients globally", image: img1 },
+            { title: "High Success Rate", category: "Recovery", tools: "Account Management", desc: "Maintained a high success rate in account recovery and issue resolution", image: img2 },
+            { title: "Access Restoration", category: "Support", tools: "Security", desc: "Handled cases including account access issues and recovery", image: img3 },
+            { title: "Visibility Optimization", category: "Growth", tools: "Strategy", desc: "Delivered visibility and reach optimization", image: img4 },
+            { title: "Restriction Handling", category: "Compliance", tools: "Appeals", desc: "Specialized in restriction and limitation removal", image: img5 },
+            { title: "Diverse Clientele", category: "Reach", tools: "Brand Positioning", desc: "Consistent results across creators, businesses, and public profiles", image: img6 }
           ].map((item, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
