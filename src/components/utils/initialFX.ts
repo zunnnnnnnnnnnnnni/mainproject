@@ -23,6 +23,19 @@ export function initialFX() {
     }
   );
 
+  gsap.fromTo(
+    ".landing-h2-info",
+    { opacity: 0, y: 80, filter: "blur(5px)" },
+    {
+      opacity: 1,
+      duration: 1.2,
+      filter: "blur(0px)",
+      ease: "power3.inOut",
+      y: 0,
+      stagger: 0.1,
+      delay: 0.3,
+    }
+  );
 
   gsap.fromTo(
     ".landing-info-h2",
@@ -46,6 +59,7 @@ export function initialFX() {
     }
   );
 
+  LoopText(".landing-h2-info", ".landing-h2-info-1");
   LoopText(".landing-h2-1", ".landing-h2-2");
 }
 
