@@ -1,14 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-import { SplitText } from "gsap-trial/SplitText";
 
 interface ParaElement extends HTMLElement {
   anim?: gsap.core.Animation;
-  split?: SplitText;
 }
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function setSplitText() {
   ScrollTrigger.config({ ignoreMobileResize: true });
@@ -19,20 +16,14 @@ export default function setSplitText() {
   const TriggerStart = window.innerWidth <= 1024 ? "top 60%" : "20% 60%";
   const ToggleAction = "play pause resume reverse";
 
-  paras.forEach((para: ParaElement) => {
+    paras.forEach((para: ParaElement) => {
     para.classList.add("visible");
     if (para.anim) {
       para.anim.progress(1).kill();
-      para.split?.revert();
     }
 
-    para.split = new SplitText(para, {
-      type: "lines,words",
-      linesClass: "split-line",
-    });
-
     para.anim = gsap.fromTo(
-      para.split.words,
+      para,
       { autoAlpha: 0, y: 80 },
       {
         autoAlpha: 1,
@@ -44,21 +35,15 @@ export default function setSplitText() {
         duration: 1,
         ease: "power3.out",
         y: 0,
-        stagger: 0.02,
       }
     );
   });
   titles.forEach((title: ParaElement) => {
     if (title.anim) {
       title.anim.progress(1).kill();
-      title.split?.revert();
     }
-    title.split = new SplitText(title, {
-      type: "chars,lines",
-      linesClass: "split-line",
-    });
     title.anim = gsap.fromTo(
-      title.split.chars,
+      title,
       { autoAlpha: 0, y: 80, rotate: 10 },
       {
         autoAlpha: 1,
@@ -71,7 +56,6 @@ export default function setSplitText() {
         ease: "power2.inOut",
         y: 0,
         rotate: 0,
-        stagger: 0.03,
       }
     );
   });

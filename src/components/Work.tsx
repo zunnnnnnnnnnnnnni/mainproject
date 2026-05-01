@@ -5,7 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 import img1 from "C:/Users/Mcc/.gemini/antigravity/brain/9e5875b0-0f67-4f00-9dd8-aed1f62910c3/media__1777632529505.jpg";
-import img2 from "C:/Users/Mcc/.gemini/antigravity/brain/9e5875b0-0f67-4f00-9dd8-aed1f62910c3/media__1777632667656.jpg";
+import img2 from "C:/Users/Mcc/.gemini/antigravity/brain/37e5ec36-22d2-4e4f-b6f0-c0e5b37457f7/media__1777648423357.jpg";
+import img3 from "C:/Users/Mcc/.gemini/antigravity/brain/37e5ec36-22d2-4e4f-b6f0-c0e5b37457f7/access_restoration_1777648895738.png";
+import img4 from "C:/Users/Mcc/.gemini/antigravity/brain/37e5ec36-22d2-4e4f-b6f0-c0e5b37457f7/media__1777648636401.jpg";
+import img5 from "C:/Users/Mcc/.gemini/antigravity/brain/37e5ec36-22d2-4e4f-b6f0-c0e5b37457f7/media__1777648961490.png";
+import img6 from "C:/Users/Mcc/.gemini/antigravity/brain/37e5ec36-22d2-4e4f-b6f0-c0e5b37457f7/diverse_clientele_1777649067248.png";
 
 gsap.registerPlugin(useGSAP);
 
@@ -59,10 +63,10 @@ const Work = () => {
           {[
             { title: "Global Reach", category: "Clientele", tools: "Instagram, Facebook, X", desc: "Successfully supported 1000+ clients globally", image: img1 },
             { title: "High Success Rate", category: "Recovery", tools: "Account Management", desc: "Maintained a high success rate in account recovery and issue resolution", image: img2 },
-            { title: "Access Restoration", category: "Support", tools: "Security", desc: "Handled cases including account access issues and recovery", image: "/images/placeholder.webp" },
-            { title: "Visibility Optimization", category: "Growth", tools: "Strategy", desc: "Delivered visibility and reach optimization", image: "/images/placeholder.webp" },
-            { title: "Restriction Handling", category: "Compliance", tools: "Appeals", desc: "Specialized in restriction and limitation removal", image: "/images/placeholder.webp" },
-            { title: "Diverse Clientele", category: "Reach", tools: "Brand Positioning", desc: "Consistent results across creators, businesses, and public profiles", image: "/images/placeholder.webp" }
+            { title: "Access Restoration", category: "Support", tools: "Security", desc: "Handled cases including account access issues and recovery", image: img3 },
+            { title: "Visibility Optimization", category: "Growth", tools: "Strategy", desc: "Delivered visibility and reach optimization", image: img4 },
+            { title: "Restriction Handling", category: "Compliance", tools: "Appeals", desc: "Specialized in restriction and limitation removal", image: img5 },
+            { title: "Diverse Clientele", category: "Reach", tools: "Brand Positioning", desc: "Consistent results across creators, businesses, and public profiles", image: img6 }
           ].map((item, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
