@@ -87,24 +87,19 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>GROWTH & STRATEGY</h3>
+              <h4>Services</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Audience targeting and organic growth planning. Platform-specific strategy development, brand positioning and visibility improvement.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Expertise</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Instagram</div>
+                <div className="what-tags">Facebook</div>
+                <div className="what-tags">X (Twitter)</div>
+                <div className="what-tags">Brand Positioning</div>
+                <div className="what-tags">Content Strategy</div>
+                <div className="what-tags">Visibility Optimization</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +123,19 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>ACCOUNT SECURITY</h3>
+              <h4>Services</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Recovery support for restricted, disabled, or compromised accounts. Structured appeal handling, security strengthening and brand identity protection.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Expertise</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">Account Recovery</div>
+                <div className="what-tags">Access Restoration</div>
+                <div className="what-tags">Shadow Ban Handling</div>
+                <div className="what-tags">Verification Support</div>
+                <div className="what-tags">Reputation Management</div>
+                <div className="what-tags">Username Acquisition</div>
               </div>
               <div className="what-arrow"></div>
             </div>
