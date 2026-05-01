@@ -1,3 +1,4 @@
+// VERSION TRACKING: CLEANED_V1
 import { PropsWithChildren, useEffect, useState } from "react";
 import About from "./About";
 import Career from "./Career";

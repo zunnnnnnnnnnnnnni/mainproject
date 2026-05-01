@@ -1,3 +1,4 @@
+// VERSION TRACKING: CLEANED_V1
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
